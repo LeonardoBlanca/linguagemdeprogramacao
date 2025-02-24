@@ -34,3 +34,14 @@ button {
 button:hover {
     background-color: #f3a4b8;
 }
+
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background: #333;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
