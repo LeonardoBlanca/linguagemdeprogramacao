@@ -16,7 +16,7 @@ body {
 }
 
 button {
-    background: #dccdf4;
+    background: #007bff;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -44,4 +44,30 @@ button:hover {
     position: fixed;
     left: 0;
     top: 0;
+}
+
+
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 16px;
+    
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+}
+.container {
+    /* Capacidade do elemento crescer */
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
