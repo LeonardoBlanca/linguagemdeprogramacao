@@ -7,6 +7,8 @@ body {
     justify-content: center; /* Centraliza Horizontalmente*/
     height: 100vh;
 }
+
+
 .card {
     background-color: white;
     padding: 20px;

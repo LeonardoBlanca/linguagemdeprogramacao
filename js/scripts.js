@@ -68,8 +68,20 @@ function exe05(){
 function exe06(){
     let nro1 = Number(document.getElementById("nro1").value)
     let nro2 = Number(document.getElementById("nro2").value)
-    
-    document.getElementById("result").innerHTML = "O resultado é " + resultado
+    let comissao = 0.04
+
+
+    let salarioComissao = nro2 * (1 + comissao)
+
+    document.getElementById("result1").innerHTML = salarioComissao.toLocaleString("pt-BR", {
+        style: "currency",
+        currency: "BRL"
+    })
+    document.getElementById("result2").innerHTML = (nro1 + salarioComissao).toLocaleString("pt-BR", {
+        style: "currency",
+        currency: "BRL"
+    })
+
 }
 
 function exe07(){
