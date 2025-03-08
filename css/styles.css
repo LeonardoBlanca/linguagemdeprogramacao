@@ -45,12 +45,13 @@ button:hover {
     background: #333;
     color: white;
     padding: 20px;
-    position: fixed;
-    left: 0;
-    top: 0;
+
 }
 
-
+.container1 {
+    display: flex;
+    flex-grow: 1;
+}
 
 .sidebar ul {
     list-style: none;
@@ -72,13 +73,14 @@ button:hover {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    margin-left: 200px;
-    display: flex;
+
     justify-content: center;
     align-items: center;
+    gap: 25px;
+    height: 100vh;
 }
 
-.cardResultado {
+.resultado {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
@@ -90,4 +92,7 @@ button:hover {
 
 .ativo {
     font-weight: bold;
+}
+.hidden {
+    display: none;
 }

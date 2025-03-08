@@ -86,15 +86,27 @@ function exe06(){
 
 function exe07(){
     let nro1 = Number(document.getElementById("nro1").value)
-    let nro2 = Number(document.getElementById("nro2").value)
-    
-    document.getElementById("result").innerHTML = "O resultado é " + resultado
+
+
+
+    let result1 = nro1 * 1.15
+    let result2 = nro1 - (nro1 * 0.20)
+
+    // Exibe o card Resultado
+    document.getElementById('cardResultado').classList.remove("hidden")
+
+    // Exibe o resultado
+    document.getElementById("result1").innerHTML = result1.toFixed(2) + " Kg"
+    document.getElementById("result2").innerHTML = result2.toFixed(2) + " Kg"
+
 }
 
 function exe08(){
     let nro1 = Number(document.getElementById("nro1").value)
     let nro2 = Number(document.getElementById("nro2").value)
-    
+
+
+
     document.getElementById("result").innerHTML = "O resultado é " + resultado
 }
 
