@@ -103,11 +103,14 @@ function exe07(){
 
 function exe08(){
     let nro1 = Number(document.getElementById("nro1").value)
-    let nro2 = Number(document.getElementById("nro2").value)
+    
+    // O método toLocaleString coloca separador de milhares
+    let resultado = parseFloat(nro1 * 1000).toLocaleString('pt-BR')
 
+    // Exibe o card Resultado
+    document.getElementById('cardResultado').classList.remove("hidden")
 
-
-    document.getElementById("result").innerHTML = "O resultado é " + resultado
+    document.getElementById("result1").innerHTML = resultado + " gramas"
 }
 
 function exe09(){
