@@ -101,6 +101,7 @@ function exe07(){
 
 }
 
+// O exe08 calcula o peso em gramas a partir do peso em kg.
 function exe08(){
     let nro1 = Number(document.getElementById("nro1").value)
     
@@ -109,20 +110,33 @@ function exe08(){
 
     // Exibe o card Resultado
     document.getElementById('cardResultado').classList.remove("hidden")
-
+    
     document.getElementById("result1").innerHTML = resultado + " gramas"
 }
 
+// O exe09 calcula a áre de um trapézio. Precisa da base maior, base menor e altura.
 function exe09(){
-    let nro1 = Number(document.getElementById("nro1").value)
-    let nro2 = Number(document.getElementById("nro2").value)
+    let baseMaior = Number(document.getElementById("nro1").value)
+    let baseMenor = Number(document.getElementById("nro2").value)
+    let altura = Number(document.getElementById("nro3").value)
     
-    document.getElementById("result").innerHTML = "O resultado é " + resultado
+    let resultado = ((baseMaior + baseMenor) * altura ) / 2
+
+    // Exibe o card Resultado
+    document.getElementById('cardResultado').classList.remove("hidden")
+
+
+    document.getElementById("result1").innerHTML = resultado
 }
 
 function exe10(){
-    let nro1 = Number(document.getElementById("nro1").value)
-    let nro2 = Number(document.getElementById("nro2").value)
+    let lado1 = Number(document.getElementById("nro1").value)
+    let lado2 = Number(document.getElementById("nro2").value)
+
+    let resultado = lado1 * lado2
     
-    document.getElementById("result").innerHTML = "O resultado é " + resultado
+    // Exibe o card Resultado
+    document.getElementById('cardResultado').classList.remove("hidden")
+
+    document.getElementById("result1").innerHTML = resultado
 }
