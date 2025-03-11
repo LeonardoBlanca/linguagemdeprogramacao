@@ -173,10 +173,28 @@ function exe12(){
     let salarioMinimo = Number(document.getElementById("nro1").value)
     let salarioFuncionario = Number(document.getElementById("nro2").value)
 
-    let resultado = Number(salarioFuncionario / salarioMinimo).toFixed()
+    let resultado = Number(salarioFuncionario / salarioMinimo)
     
     // Exibe o card Resultado
     document.getElementById('cardResultado').classList.remove("hidden")
 
     document.getElementById("result1").innerHTML = resultado
+}
+
+function exe13(){
+    let nro1 = Number(document.getElementById("nro1").value)
+    let i = 0
+    let resultado
+   
+
+    // Exibe o card Resultado
+    document.getElementById('cardResultado').classList.remove("hidden")
+
+    for(i; i < 10; i++){
+        resultado = nro1 * i
+        document.getElementById("result1").innerHTML = resultado
+    }
+    
+
+    
 }
