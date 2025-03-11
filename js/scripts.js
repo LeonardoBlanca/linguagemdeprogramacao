@@ -12,9 +12,11 @@ function exe01(){
     // Vamos fazer a subtração
     let sub = nro1 - nro2
 
-    // Mostrar o resultado
+    // Exibe o card Resultado
+    document.getElementById('cardResultado').classList.remove("hidden")
+
     // alert("A subração é: " + sub)
-    document.getElementById("sub").innerText = "O resultdo é: " + sub
+    document.getElementById("result1").innerText = sub
 }
 
 // O exe 02 Calcula a multiplicação de 3 números.
@@ -26,16 +28,23 @@ function exe02(){
     // Multiplicando
     let result = nro1 * nro2 * nro3
 
-    document.getElementById("result").innerHTML = "O resultado é: " + result
+    // Exibe o card Resultado
+    document.getElementById('cardResultado').classList.remove("hidden")
+
+    document.getElementById("result1").innerHTML = result
 }
 
-// O exe04 calcula a divisão de 2 números.
+// O exe03 calcula a divisão de 2 números.
 function exe03(){
     let nro1 = Number(document.getElementById("nro1").value)
     let nro2 = Number(document.getElementById("nro2").value)
 
     let resultado = nro1 / nro2
-    document.getElementById("result").innerHTML = "O resultado é " + resultado
+
+    // Exibe o card Resultado
+    document.getElementById('cardResultado').classList.remove("hidden")
+
+    document.getElementById("result1").innerHTML = resultado
     
 }
 
@@ -47,9 +56,12 @@ function exe04(){
     nro1 *= 2 // Colocando peso 2
     nro2 *= 3 // colocando peso 3
 
+    // Exibe o card Resultado
+    document.getElementById('cardResultado').classList.remove("hidden")
+
     let resultado = (nro1 + nro2) / (2 + 3) // Dividindo pela soma dos pesos
 
-    document.getElementById("result").innerHTML = "O resultado é " + resultado
+    document.getElementById("result1").innerHTML = "O resultado é " + resultado
 }
 
 // O exe05 calcula o aumento de 10% em um preço.
@@ -62,7 +74,10 @@ function exe05(){
         currency: 'BRL'
     })
     
-    document.getElementById("result").innerHTML = "O novo preço é: " + resultado
+    // Exibe o card Resultado
+    document.getElementById('cardResultado').classList.remove("hidden")
+
+    document.getElementById("result1").innerHTML =resultado
 }
 
 function exe06(){
@@ -72,6 +87,9 @@ function exe06(){
 
 
     let salarioComissao = nro2 * (1 + comissao)
+
+    // Exibe o card Resultado
+    document.getElementById('cardResultado').classList.remove("hidden")
 
     document.getElementById("result1").innerHTML = salarioComissao.toLocaleString("pt-BR", {
         style: "currency",
@@ -86,8 +104,6 @@ function exe06(){
 
 function exe07(){
     let nro1 = Number(document.getElementById("nro1").value)
-
-
 
     let result1 = nro1 * 1.15
     let result2 = nro1 - (nro1 * 0.20)
@@ -111,7 +127,7 @@ function exe08(){
     // Exibe o card Resultado
     document.getElementById('cardResultado').classList.remove("hidden")
     
-    document.getElementById("result1").innerHTML = resultado + " gramas"
+    document.getElementById("result1").innerHTML = resultado + " g."
 }
 
 // O exe09 calcula a áre de um trapézio. Precisa da base maior, base menor e altura.
