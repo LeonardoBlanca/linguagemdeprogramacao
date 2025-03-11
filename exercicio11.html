@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Exercício 10</title>
+    <title>Exercício 11</title>
     <link rel="stylesheet" href="css/styles.css"/>
     <link rel="stylesheet" href="css/exercicio01.css"/>
     <script src="js/scripts.js"></script>
@@ -25,31 +25,32 @@
             <li><a href="exercicio07.html">Exercício 07</a></li>
             <li><a href="exercicio08.html">Exercício 08</a></li>
             <li><a href="exercicio09.html">Exercício 09</a></li>
-            <li class="ativo"><a href="exercicio10.html">Exercício 10</a></li>
+            <li><a href="exercicio10.html">Exercício 10</a></li>
+            <li class="ativo"><a href="exercicio11.html">Exercício 11</a></li>
         </ul>
     </div>
 
     <div class="container">
         <div class="card">
-            <h1>Exercício 10</h1>
+            <h1>Exercício 11</h1>
             <p>
-                Faça um programa que calcule e mostre a área de um quadrado:<br/>
-                Sabe-se que: A = lado x lado.
+                Faça um programa que calcule e mostre a área de um losango:<br/>
+                Sabe-se que: A = (diagonal maior * diagonal menor) / 2.
             </p>
             <form>
-                <label>Digite o lado 1:</label>
+                <label>Digite a diagonal maior:</label>
                 <input type="number" id="nro1"/>
-                <label>Digite o lado 2:</label>
+                <label>Digite a diagonal menor:</label>
                 <input type="number" id="nro2"/>
                 
 
 
-                <button type="button" onclick="exe10()">Calcular</button>
+                <button type="button" onclick="exe11()">Calcular</button>
 
             </form>
         </div>
         <div class="resultado hidden" id="cardResultado">
-            <p>Área do Quadrado: <span id="result1"></span></p>
+            <p>Área do Losango: <span id="result1"></span></p>
             
         </div>
 

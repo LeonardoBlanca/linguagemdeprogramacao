@@ -140,3 +140,27 @@ function exe10(){
 
     document.getElementById("result1").innerHTML = resultado
 }
+
+function exe11(){
+    let diagonalMaior = Number(document.getElementById("nro1").value)
+    let diagonalMenor = Number(document.getElementById("nro2").value)
+
+    let resultado = (diagonalMaior * diagonalMenor) / 2
+    
+    // Exibe o card Resultado
+    document.getElementById('cardResultado').classList.remove("hidden")
+
+    document.getElementById("result1").innerHTML = resultado
+}
+
+function exe12(){
+    let salarioMinimo = Number(document.getElementById("nro1").value)
+    let salarioFuncionario = Number(document.getElementById("nro2").value)
+
+    let resultado = Number(salarioFuncionario / salarioMinimo).toFixed()
+    
+    // Exibe o card Resultado
+    document.getElementById('cardResultado').classList.remove("hidden")
+
+    document.getElementById("result1").innerHTML = resultado
+}
