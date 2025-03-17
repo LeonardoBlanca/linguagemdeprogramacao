@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Exercício 07</title>
+    <link rel="stylesheet" href="../css/styles.css"/>
+    <link rel="stylesheet" href="../css/exercicio01.css"/>
+    <script src="../js/scripts.js"></script>
+
+</head>
+<body>
+<div class="container1">
+
+    <div class="sidebar">
+        <h2>Exercícios de JS</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="exercicio01.html">Exercício 01</a></li>
+            <li><a href="exercicio02.html">Exercício 02</a></li>
+            <li><a href="exercicio03.html">Exercício 03</a></li>
+            <li><a href="exercicio04.html">Exercício 04</a></li>
+            <li><a href="exercicio05.html">Exercício 05</a></li>
+            <li><a href="exercicio06.html">Exercício 06</a></li>
+            <li class="ativo"><a href="exercicio07.html">Exercício 07</a></li>
+            <li><a href="exercicio08.html">Exercício 08</a></li>
+            <li><a href="exercicio09.html">Exercício 09</a></li>
+            <li><a href="exercicio10.html">Exercício 10</a></li>
+          </ul>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h1>Exercício 07</h1>
+            <p>
+                Faça um programa que receba o peso de uma pessoa, calcule e mostre:<br/><br/>
+                a) O novo peso, se a pessoa engordar 15% sobre o peso digitado:<br/>
+                b) o novo peso, se a pessoa emagrecer 20% sobre o peso digitado:<br/>
+            </p>
+            <form>
+                <label>Digite o Peso:</label>
+                <input type="number" id="nro1"/>
+
+
+                <button type="button" onclick="exe07()">Calcular</button>
+
+            </form>
+        </div>
+        <div class="resultado hidden" id="cardResultado">
+            <p>Peso acrescido em 15%: <span id="result1"></span></p>
+            <p>Peso decrescido em 20%: <span id="result2"></span></p>
+        </div>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>
