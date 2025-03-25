@@ -6,7 +6,7 @@
     <title>Exercício 08</title>
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/exercicio01.css" />
-    <script src="../js/scripts.js"></script>
+    <script src="../js/lista2.js"></script>
   </head>
   <body>
     <div class="container1">
@@ -31,18 +31,20 @@
         <div class="card">
           <h1>Exercício 08</h1>
           <p>
-            Faça um programa que receba o peso de uma pessoa em quilos, calcule
-            e mostre esse peso em gramas:
+            Faça um programa para calcular e mostrar o salário reajustado de um funcionário. 
+            O percentual de aumento econtra-se na tabela a seguir:
           </p>
+          <p>Salário: Até R$ 500,00 = 35% de aumento</p>
+          <p>Salário: Até R$ 300,00 = 15% de aumento</p>
           <form>
-            <label>Digite o Peso:</label>
-            <input type="number" id="nro1" />
+            <label>Digite o Salário:</label>
+            <input type="number" id="salario" />
 
             <button type="button" onclick="exe08()">Calcular</button>
           </form>
         </div>
         <div class="resultado hidden" id="cardResultado">
-          <p>Peso em gramas: <span id="result1"></span></p>
+          <p><span id="result1"></span></p>
         </div>
       </div>
     </div>

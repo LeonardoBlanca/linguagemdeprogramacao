@@ -6,7 +6,7 @@
     <title>Exercício 10</title>
     <link rel="stylesheet" href="../css/styles.css"/>
     <link rel="stylesheet" href="../css/exercicio01.css"/>
-    <script src="../js/scripts.js"></script>
+    <script src="../js/lista2.js"></script>
 
 </head>
 <body>
@@ -33,19 +33,20 @@
         <div class="card">
             <h1>Exercício 10</h1>
             <p>
-                Faça um programa que calcule e mostre a área de um quadrado:<br/>
-                Sabe-se que: A = lado x lado.
+                O preço ao consumidor de um carro novo é a soma do custo de fábrica com a porcentagem do 
+                distribuidor e dos impostos, ambos aplicados ao custo de fábrica. As pocentagens encontram-se 
+                na tabela a seguir. Faça um programa que receba o custo de fábrica de um carro e mostre o 
+                preço ao consumidor.
             </p>
             <form>
-                <label>Digite o lado 1:</label>
-                <input type="number" id="nro1"/>
-                <label>Digite o lado 2:</label>
-                <input type="number" id="nro2"/>
+                <label>Custo de Fábrica:</label>
+                <input type="number" id="custoFabrica"/>
+                
                 <button type="button" onclick="exe10()">Calcular</button>
             </form>
         </div>
         <div class="resultado hidden" id="cardResultado">
-            <p>Área do Quadrado: <span id="result1"></span></p>
+            <p><span id="result1"></span></p>
             
         </div>
 

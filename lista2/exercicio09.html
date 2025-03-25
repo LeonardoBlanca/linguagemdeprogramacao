@@ -6,7 +6,7 @@
     <title>Exercício 09</title>
     <link rel="stylesheet" href="../css/styles.css"/>
     <link rel="stylesheet" href="../css/exercicio01.css"/>
-    <script src="../js/scripts.js"></script>
+    <script src="../js/lista2.js"></script>
 
 </head>
 <body>
@@ -33,16 +33,14 @@
         <div class="card">
             <h1>Exercício 09</h1>
             <p>
-                Faça um programa que calcule e mostre a área de um trapézio:<br/>
-                Sabe-se que:<br/> A = ((base maior + base menor) * altura ) / 2
+                Um banco concederá um crédito especial aos seus clientes, de acordo com o salário
+                médio no último ano. Faça um programa que receba o salário médio de um cliente e 
+                calcule o valor do crédito, de acordo com a tabela a seguir. Mostre o saldo médio e o valor
+                do crédito.
             </p>
             <form>
-                <label>Digite a Base Maior:</label>
-                <input type="number" id="nro1"/>
-                <label>Digite a Base Menor:</label>
-                <input type="number" id="nro2"/>
-                <label>Digite a Altura:</label>
-                <input type="number" id="nro3"/>
+                <label>Digite o saldo médio:</label>
+                <input type="number" id="saldoMedio"/>
 
 
                 <button type="button" onclick="exe09()">Calcular</button>
@@ -50,7 +48,7 @@
             </form>
         </div>
         <div class="resultado hidden" id="cardResultado">
-            <p>Área do Trapézio: <span id="result1"></span></p>
+            <p><span id="result1"></span></p>
             
         </div>
 

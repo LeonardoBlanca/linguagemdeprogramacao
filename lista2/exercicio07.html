@@ -6,7 +6,7 @@
     <title>Exercício 07</title>
     <link rel="stylesheet" href="../css/styles.css"/>
     <link rel="stylesheet" href="../css/exercicio01.css"/>
-    <script src="../js/scripts.js"></script>
+    <script src="../js/lista2.js"></script>
 
 </head>
 <body>
@@ -33,22 +33,18 @@
         <div class="card">
             <h1>Exercício 07</h1>
             <p>
-                Faça um programa que receba o peso de uma pessoa, calcule e mostre:<br/><br/>
-                a) O novo peso, se a pessoa engordar 15% sobre o peso digitado:<br/>
-                b) o novo peso, se a pessoa emagrecer 20% sobre o peso digitado:<br/>
+                Uma empresa decide dar um aumento de 30% aos funcionários com salários inferiores
+                a R$ 500,00. Faça um programa que receba o salário do funcionário e mostre o valor
+                do salário reajustado ou uma mensagem, caso ele não tenha direito ao aumento.
             </p>
             <form>
-                <label>Digite o Peso:</label>
-                <input type="number" id="nro1"/>
-
-
+                <label>Salário:</label>
+                <input type="number" id="salario"/>
                 <button type="button" onclick="exe07()">Calcular</button>
-
             </form>
         </div>
         <div class="resultado hidden" id="cardResultado">
-            <p>Peso acrescido em 15%: <span id="result1"></span></p>
-            <p>Peso decrescido em 20%: <span id="result2"></span></p>
+            <p><span id="result1"></span></p>
         </div>
 
     </div>

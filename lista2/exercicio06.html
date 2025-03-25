@@ -6,7 +6,7 @@
     <title>Exercício 06</title>
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/exercicio01.css" />
-    <script src="../js/scripts.js"></script>
+    <script src="../js/lista2.js"></script>
   </head>
   <body>
     <div class="sidebar">
@@ -29,23 +29,26 @@
       <div class="card">
         <h1>Exercício 06</h1>
         <p>
-          Um funcionário recebe um salário fixo mais 4% de comissão sobre as
-          vendas. Faça um programa que receba o salário fixo do funcionário e o
-          valor de suas vendas, calcule e mostre a comissão e seu salário final.
+          Faça um programa que receba dois números e execute uma das operações listadas
+          a seguir, de acordo com a escolha do usuário.
         </p>
         <form>
-          <label>Salário do Funcionário (Em Reais):</label>
+          <label>Número 1:</label>
           <input type="number" id="nro1" />
-          <label>Total Mensal de vendas (Em Reais):</label>
+          <label>Número 2:</label>
           <input type="number" id="nro2" />
-
+          <label> Escolha a sua opção </label>
+          <select id="selecao">
+              <option value="1">Primeiro número elevado pelo segundo número</option>
+              <option value="2">Raiz Quadrada de cada um dos números</option>
+              <option value="3">Raiz cúbica de cada um dos números</option>
+          </select>
           <button type="button" onclick="exe06()">Calcular</button>
         </form>
       </div>
       <!-- Card Resposta -->
       <div class="resultado hidden" id="cardResultado">
-        <p>A comissão é de: <span id="result1"></span></p>
-        <p>O salário + comissão é de: <span id="result2"></span></p>
+        <p><span id="result1"></span></p>
       </div>
     </div>
   </body>
