@@ -94,6 +94,8 @@ button:hover {
 
 .ativo {
     font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 10px;
 }
 .hidden {
     display: none;

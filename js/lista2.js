@@ -254,3 +254,52 @@ function exe10(){
      document.getElementById('cardResultado').classList.remove("hidden")
 }
 
+
+function exe24(){
+    // Definindo variáveis e armazenando valores.
+
+
+    // Lógica de cálculo e formatação de moeda.
+
+
+    // Exibindo os Resultados
+
+
+     // Exibe o card Resultado.
+     document.getElementById('cardResultado').classList.remove("hidden")
+}
+
+function exe25(){
+    // Definindo variáveis e armazenando valores
+    let horasExtras = Number(document.getElementById('horasExtras').value)
+    let horasFaltas = Number(document.getElementById('horasFaltas').value)
+    let valorPremio
+    let faixaDeValor
+
+    // Calculando faixa de valor
+    faixaDeValor = horasExtras - ((2/3) * horasFaltas)
+
+    // Convertendo para minutos
+    faixaDeValor = faixaDeValor * 60
+
+    // Lógica de cálculo
+   if (faixaDeValor > 0 && faixaDeValor < 600){
+        valorPremio = 100
+    } else if (faixaDeValor >= 600 && faixaDeValor < 1200 ){
+        valorPremio = 200
+    } else if (faixaDeValor >= 1200 && faixaDeValor < 1800){
+        valorPremio = 300
+    } else if (faixaDeValor >= 1800 && faixaDeValor < 2400){
+        valorPremio = 400
+    } else {
+        valorPremio = 500
+    }
+
+    // Exibindo os Resultados
+    faixaDeValor > 0 ?
+    document.getElementById('result1').innerHTML = `O valor do prêmio é: ${valorPremio.toLocaleString('pt-BR', { style: "currency", currency: "BRL"})}`
+        : document.getElementById('result1').innerHTML = `Valor de horas negativo, impossível calcular.`
+
+    // Exibe o card Resultado.
+    document.getElementById('cardResultado').classList.remove("hidden")
+}

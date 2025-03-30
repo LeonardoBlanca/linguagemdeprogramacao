@@ -182,19 +182,33 @@ function exe12(){
 }
 
 function exe13(){
-    let nro1 = Number(document.getElementById("nro1").value)
-    let i = 0
-    let resultado
-   
 
-    // Exibe o card Resultado
-    document.getElementById('cardResultado').classList.remove("hidden")
+    
+}
 
-    for(i; i < 10; i++){
-        resultado = nro1 * i
-        document.getElementById("result1").innerHTML = resultado
+function exe24(){
+    // Definindo variáveis e armazenando valores.
+    let quantidadeDinheiro = Number(document.getElementById("quantidadeDinheiro").value)
+    let cotacaoDolar = 1.80
+    let cotacaoMarcoAlemao = 2.0
+    let cotacaoLibraEsterlina = 3.57
+
+    // Lógica de cálculo e formatação de moeda.
+    let dolar = (quantidadeDinheiro * cotacaoDolar).toLocaleString('en-US', { style: "currency", currency: 'USD'})
+    let marcoAlemao = (quantidadeDinheiro * cotacaoMarcoAlemao).toLocaleString('de-DE', {style: 'currency', currency: 'DEM'})
+    let libraEsterlina = (quantidadeDinheiro * cotacaoLibraEsterlina).toLocaleString('en-GB', {style: "currency", currency: 'GBP'})
+
+    // Exibindo os Resultados
+    if(quantidadeDinheiro > 0){
+        document.getElementById("result1").innerHTML = `Aqui estão os valores: <br/>
+                                Dólar: ${dolar}<br/>
+                                Marco Alemão: ${marcoAlemao}<br>
+                                Libra Esterlina: ${libraEsterlina}`
+    } else {
+        document.getElementById("result1").innerHTML = `Valor de dinheiro inválido. Insira um valor acima de zero.`
     }
-    
 
-    
+
+    // Exibe o card Resultado.
+    document.getElementById('cardResultado').classList.remove("hidden")
 }
