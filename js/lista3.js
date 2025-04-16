@@ -79,3 +79,69 @@ function exe03(){
     document.getElementById('cardResultado').classList.remove("hidden")
     
 }
+
+function exe04(){
+    let numero = Number(document.getElementById('numero1').value)
+    let resultado = ""
+
+    // Calculando a tabuada
+    for(let i = 1; i <= 10; i++){
+        resultado += `${numero} x ${i} = ${i * numero}<br/>`
+    }
+
+    document.getElementById('result1').innerHTML = resultado
+    // Exibe o card Resultado
+    document.getElementById('cardResultado').classList.remove("hidden")
+}
+
+function exe05(){
+    let numero = Number(document.getElementById('numero1').value)
+    let resultado = ""
+
+    // Calculando a tabuada
+    for(let multiplicando = 1; multiplicando <= 10; multiplicando++){
+        resultado += `<div>Tabuada do ${multiplicando}<br/>`
+        for(let multiplicador = 1; multiplicador <= 10; multiplicador++){
+            resultado += `${multiplicador} x ${multiplicando} = ${multiplicador * multiplicando}<br/>`
+        }
+        
+        
+            resultado = `${resultado}</div>`
+      
+    }
+
+    document.getElementById('result1').innerHTML = resultado
+    // Exibe o card Resultado
+    document.getElementById('cardResultado').classList.remove("hidden")
+}
+
+function exe06(){
+    let codigo, valor, totalVista = 0, totalPrazo = 0
+    let resultado = ""
+
+    for(let i = 1; i <= 5; i++){
+
+        do{
+            codigo = prompt(`Digite V (à vista) ou P (à prazo)`).toUpperCase();
+        }while(codigo != 'V' && codigo != 'P')
+
+        valor = Number(prompt(`Digite o valor da transação`))
+        if(codigo == 'V'){
+            totalVista += valor
+        }
+        else {
+            totalPrazo += valor
+        }
+    }
+
+    resultado = `Total à vista: ${totalVista}
+                <br>Total à prazo: ${totalPrazo}
+                <br>Total Geral: ${totalPrazo + totalVista}
+                <br>Valor da primeira parcela: ${totalPrazo / 3}`
+
+    // Mostrando os resultados
+    document.getElementById('result1').innerHTML = resultado
+    // Exibe o card Resultado
+    document.getElementById('cardResultado').classList.remove("hidden")
+}
+

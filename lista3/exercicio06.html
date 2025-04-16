@@ -6,7 +6,7 @@
     <title>Exercício 06</title>
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/exercicio01.css" />
-    <script src="../js/lista2.js"></script>
+    <script src="../js/lista3.js"></script>
   </head>
   <body>
     <div class="sidebar">
@@ -31,20 +31,14 @@
       <div class="card">
         <h1>Exercício 06</h1>
         <p>
-          Faça um programa que receba dois números e execute uma das operações listadas
-          a seguir, de acordo com a escolha do usuário.
+          Uma loja utiliza o código V para transação à vista e P para transação a prazo. Faça um programa 
+          que receba o código e o valor de quinze transações, calcule e mostre:<br/><br>
+          a) O valor total das compras à vista;<br>
+          b) O valor total das compras à prazo;<br>
+          c) o valor total das compras efetuadas;<br>
+          d) o valor da primeira prestação das compras a prazo juntas, sabendo-se que serão pagas em três vezes.
         </p>
         <form>
-          <label>Número 1:</label>
-          <input type="number" id="nro1" />
-          <label>Número 2:</label>
-          <input type="number" id="nro2" />
-          <label> Escolha a sua opção </label>
-          <select id="selecao">
-              <option value="1">Primeiro número elevado pelo segundo número</option>
-              <option value="2">Raiz Quadrada de cada um dos números</option>
-              <option value="3">Raiz cúbica de cada um dos números</option>
-          </select>
           <button type="button" onclick="exe06()">Calcular</button>
         </form>
       </div>
