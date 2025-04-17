@@ -145,3 +145,81 @@ function exe06(){
     document.getElementById('cardResultado').classList.remove("hidden")
 }
 
+function exe07(){
+    let idade = 0, altura = 0, peso = 0
+    let idade50 = 0, idade10e20 = 0, somaAltura = 0, peso40 = 0
+    let resultado
+
+    for(let i = 1; i <= 2; i++){
+
+        do{
+            idade = Number(prompt(`Informe a idade da pessoa ${i}`));
+        }while(idade < 0);
+
+        altura = Number(prompt(`Informe a altura da pessoa ${i}`));
+        peso = Number(prompt(`Informe o peso da pessoa ${i}`));
+
+        if(idade > 50){
+            idade50++
+        }
+        if(idade >= 10 && idade <= 20){
+            idade10e20++
+            somaAltura += altura
+        }
+
+        if(peso < 40){
+            peso40++
+        }
+    }
+
+    resultado = `Item 1: ${idade50} <br/> Item 2: ${somaAltura / idade10e20} <br/> Item 3: ${peso40}`
+
+    // Mostrando os resultados
+    document.getElementById('result1').innerHTML = resultado
+    // Exibe o card Resultado
+    document.getElementById('cardResultado').classList.remove("hidden")
+}
+
+function exe08(){
+    let idade, altura, peso, olhos, cabelos
+    let idade50peso60 = 0, somaIdade = 0, qtdeAltura150 = 0
+    let qtdeAzuis = 0, qtdeRuivo = 0
+    let resultado = ""
+
+    // entrada e processamento de dados
+    for(let i = 0; i <= 3; i++){
+        idade = Number(prompt(`Informe idade ${i}`));
+        altura = Number(prompt(`Informe altura ${i}`));
+        peso = Number(prompt(`Informe peso`));
+
+        do {
+            cabelos = Number(prompt(`Informe peso`));
+        } while(cabelos != 'P' && cabelos != 'C' && cabelos != 'L' && cabelos != 'R')
+
+        do{
+            olhos = prompt('Informe a cor dos olhos').toUpperCase();
+        }while(olhos != 'A' && olhos != 'P' && olhos != 'V' && olhos != 'C');
+
+        // Processamento
+        if(idade > 50 && peso < 60){
+            idade50peso60++
+        }
+        if(altura < 1.50){
+            somaIdade += idade
+            qtdeAltura150++
+        }
+        if(olhos == 'A'){
+            qtdeAzuis++
+        }
+        if(cabelos == 'R' && olhos != 'A'){
+            qtdeRuivo++
+        }
+    }
+
+    resultado = `Item 1: ${idade50peso60} Item 2: ${somaAltura/qtdeAltura150} Item 3: ${qtdeAzuis} Item 4: ${qtdeRuivo}`
+
+    // Mostrando os resultados
+    document.getElementById('result1').innerHTML = resultado
+    // Exibe o card Resultado
+    document.getElementById('cardResultado').classList.remove("hidden")
+}
